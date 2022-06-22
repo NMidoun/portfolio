@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nabil Midoun - Développeur Front-end</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <script src="https://kit.fontawesome.com/8f20acab44.js" crossorigin="anonymous"></script>
+  <script src="./js/index.js" defer></script>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="header" id="intro">
+
+    <div class="burger__container">
+      <input type="checkbox" class="nav-toggle" />
+      <div class="burger"></div>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#skills" class="nav__link">Compétences</a></li>
+        <li class="nav__item"><a href="#works" class="nav__link">Mes Projets</a></li>
+        <li class="nav__item"><a href="./cv/cv.pdf" class="nav__link" target="_blank">Visualiser mon CV</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="intro" id="intro">
+      <div class="intro__container">
+        <p class="intro__p">Bonjour, je suis</p>
+        <h1 class="intro__title">
+          <strong>Nabil MIDOUN</strong>  
+        </h1>
+        
+        <h3 class="intro__subtitle">développeur front-end</h3>
+        
+        <p class="intro__p">Passionné par le développement web.</p>
+        <p class="intro__p intro__p--margin">Je suis à la recherche d'un emploi.</p>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2 class="skills__title">Compétences</h2>
+      <hr>
+      <article class="skills__content">
+        <h3>Compétences techniques</h3>
+
+        <ul class="skills__list">
+          <li class="skills__list__item">
+            <i class="fa-brands fa-html5 logo"></i>
+            <i class="fa-brands fa-css3-alt logo logo--css"></i>
+            <progress class="skills__progress" value="90" max="100"></progress>
+          </li>
+
+          <li class="skills__list__item">
+            <i class="fa-brands fa-js logo logo--js"></i>
+            <progress class="skills__progress" value="85" max="100"></progress>
+          </li>
+
+          <li class="skills__list__item">
+            <i class="fa-brands fa-react logo logo--react"></i>
+            <progress class="skills__progress" value="80" max="100"></progress>
+          </li>
+        </ul>
+
+      </article>
+    </section>
+
+    <section id="works">
+      <h2>Mes Projets</h2>
+      <hr>
+      <div class="works">
+        <div class="works__container">
+          <article class="works__content">
+            <a class="works__link" href="./projets/amazon-clone.html">
+              <h3 class="works__title">Clone de Amazon.</h3>
+              <p class="works__description">Langages: HTML/CSS/JavaScript</p>
+              <img class="works__image" src="./images/amazon/home.png" alt="Projet Amazon clone">
+            </a>
+          </article>
+        </div>
+  
+        <div class="works__container">
+          <article class="works__content work__content--off">
+            <a class="works__link" href="#">
+              <h3 class="works__title">Clone de Facebook.</h3>
+              <p class="works__description">Langages: HTML/CSS/JavaScript</p>
+              <img class="works__image" src="./images/logoWip.png" alt="Projet Facebook clone">
+            </a>
+          </article>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__title">
+      <a class="footer__email" href="mailto:nabil.midoun@gmail.com">
+        nabil.midoun@gmail.com
+      </a>
+    </p>
+
+    <div class="footer__container">
+      <a class="footer__social" href="./cv/cv.pdf" target="_blank">
+        <i class="fa-solid fa-file logo"></i>
+      </a>
+  
+      <a class="footer__social" href="https://github.com/NMidoun?tab=repositories" target="_blank">
+        <i class="fa-brands fa-github logo"></i>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
